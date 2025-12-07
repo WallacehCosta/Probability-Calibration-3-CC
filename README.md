@@ -42,7 +42,7 @@ This plot displays the change in predicted probabilities for each sample in the 
 
   **Interpretation:** Each arrow starts at the uncalibrated prediction and ends at the calibrated prediction. Arrows generally pointing away from the edges of the simplex and towards the correct class vertex indicate successful calibration, reducing overconfidence.
 
-[IMAGE 1: Probability Shift on Test Samples]
+![probability-shift-image](images/img1-cc3.png)
 
 ### 2. Learned Sigmoid Calibration Map
 
@@ -50,7 +50,7 @@ This plot visualizes the transformation function learned by the calibrator acros
 
   - **Interpretation:** This map reveals the transformation behavior. Arrows pointing towards the center show where the model was pulled back from certainty (e.g., a prediction of 95% is pulled down to 80%). It also highlights potential asymmetries or boundaries caused by the One-vs-Rest calibration strategy.
 
-[IMAGE 2: Learned Sigmoid Calibration Map]
+![learned-sigmoid-calibration](images/img2-cc3.png)
 
 ### 3. Metric Comparison
 
